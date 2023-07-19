@@ -1,0 +1,18 @@
+.banner__title {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+
+.banner__title h1 {
+    color: #3F3D56;
+    font-size: 50px;
+}
+
+.banner__title p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #3F3D56;
+    font-weight: 500;
+
+}
