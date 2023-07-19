@@ -1,19 +1,11 @@
 .input__over_all__container {
     background-color: lightblue;
     height: 35vh;
-}
-
-.first_row_container {
     display: flex;
     justify-content: center;
-    padding-top: 2%;
+    align-items: center;
 }
 
-.second_row_container {
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
-}
 
 #level-one {
     display: flex;
@@ -22,53 +14,19 @@
     margin-left: 2%;
 }
 
-#level-two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 2%;
-}
 
-.level-one,
-.level-two,
-.level-three {
+
+.level-one {
     width: 30%;
     height: 75px;
     background-color: cadetblue;
 }
 
-.level-one input,
-.level-two input,
-.level-three input {
+.level-one input {
     width: 60%;
     height: 45px;
     border-radius: 20px;
     padding-left: 15px;
     font-size: 18px;
-}
-
-/* --------second row  ------ */
-
-.level-four,
-.level-five,
-.level-six {
-    width: 30%;
-    height: 75px;
-    background-color: cadetblue;
-}
-
-.level-four input,
-.level-five input {
-    width: 60%;
-    height: 45px;
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 18px;
-}
-
-.level-six select {
-    width: 20%;
-    height: 45px;
-    border-radius: 10px;
-    padding-left: 5px;
+    padding-right: 15px;
 }
