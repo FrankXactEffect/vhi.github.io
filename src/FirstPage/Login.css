@@ -1,0 +1,103 @@
+
+.flex{
+    display: flex;
+}
+
+.side{
+
+    margin-left: 3rem;
+    box-shadow: 8px 1px #a6a6a669;
+    width: 44rem;
+    height: 49.5rem;
+}
+.logo{
+    width: 25%;
+    margin-top: 2rem;
+}
+.Header1{
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+}
+.paragraph1{
+font-family: Poppins;
+font-size: 20px;
+line-height: 1.5rem;
+margin-top: -2rem;
+}
+
+.img{
+    width: 85%;
+}
+.Right-side{
+    margin-top: 8rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.register{
+    color:black
+}
+.Top-text{
+    text-align: center;
+}
+.Vehicle{
+    text-align: center;
+    width: 60%;
+}
+.input{
+    background-color:#FAFAFA;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 448px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+    margin-top: -1rem;
+}
+#label{
+    display: flex;
+  
+}
+
+.Password{
+    margin-top: 1rem;
+}
+
+#fgt-pwd{
+    text-decoration: none;
+    color: #FF6584;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.Btn{
+    width: 400px;
+    height: 70px;
+    color: white;
+    border: none;
+    background-color: #00C707;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.20));
+    border-radius: 20px;
+    font-family: poppins;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.Btn:hover{
+    background-color: #03d80a;
+}
+#Create-acct{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+#Signup{
+    text-decoration: none;
+    font-weight: 600;
+}
