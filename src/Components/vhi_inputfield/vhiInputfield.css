@@ -1,9 +1,10 @@
 .input__over_all__container {
     background-color: lightblue;
-    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+    height: 100px;
 }
 
 
@@ -17,15 +18,20 @@
 
 
 .level-one {
-    width: 30%;
-    height: 75px;
+    width: 25%;
+    height: 80px;
     background-color: cadetblue;
+
+}
+
+.level-one label {
+    font-size: 20px;
 }
 
 .level-one input {
-    width: 60%;
-    height: 45px;
-    border-radius: 20px;
+    width: 85%;
+    height: 55px;
+    border-radius: 25px;
     padding-left: 15px;
     font-size: 18px;
     padding-right: 15px;

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import './vhiButton.css'
 function Vhi_Button() {
     return (
-        <div>Vhi_Button</div>
+        <div className='vhi_button_container'>
+            <button type="submit">REGISTER</button>
+        </div>
     )
 }
 

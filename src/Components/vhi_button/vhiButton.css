@@ -1,0 +1,14 @@
+.vhi_button_container {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+}
+
+.vhi_button_container button {
+    width: 35%;
+    height: 55px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}

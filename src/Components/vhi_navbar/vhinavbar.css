@@ -8,8 +8,16 @@
 }
 
 .middle__links #links {
-
-    padding-left: 30px;
+    padding-left: 45px;
     text-decoration: none;
 
+}
+
+.drop-dwn-lnk {
+    position: relative;
+}
+
+.drop_down_link {
+    position: absolute;
+    right: -28px;
 }

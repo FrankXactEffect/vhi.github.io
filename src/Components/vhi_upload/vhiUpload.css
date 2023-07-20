@@ -4,16 +4,9 @@
     align-items: center;
     width: 100%;
     background-color: burlywood;
-    height: 40vh;
+    height: 50vh;
 }
 
-.traced-upload-container .sub__caption {
-    margin-top: 1%;
-    font-size: 20px;
-
-    color: #3F3D56;
-    font-weight: 500;
-}
 
 
 .box-container {
@@ -28,9 +21,19 @@
 
 }
 
+.box-container-two {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 1%;
+    height: 30vh;
+    align-items: center;
+}
+
 .traced-upload-box {
-    width: 14%;
-    height: 155px;
+    width: 20%;
+    height: 170px;
     background-color: yellow;
     border: 1px dashed black;
     border-radius: 8px;
@@ -38,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 .uploadIcon {
@@ -48,8 +51,8 @@
 }
 
 .traced-upload-box p {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     margin-top: 10px;
     word-spacing: 5px;
     color: #3f3d56a6;
