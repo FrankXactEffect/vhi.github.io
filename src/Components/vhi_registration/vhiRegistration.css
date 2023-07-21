@@ -18,3 +18,21 @@
     font-weight: 500;
 
 }
+
+.vhi_registration-container {
+    position: relative;
+}
+
+.ques-con {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    bottom: 25%;
+    left: 94%;
+
+}
+
+.question-icon {
+    font-size: 55px !important;
+    color: rgb(3, 184, 3);
+}
