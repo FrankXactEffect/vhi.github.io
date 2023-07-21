@@ -2,17 +2,19 @@
     display: grid;
     place-items: center;
     margin-top: 30px;
+
 }
 
 .banner__title h1 {
     color: #3F3D56;
     font-size: 60px;
+    margin-top: 15px;
 }
 
 .banner__title p {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 55px;
-    color: #3F3D56;
+    color: #5b596b;
     font-weight: 500;
 
 }
