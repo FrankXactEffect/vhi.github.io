@@ -1,0 +1,15 @@
+.main_page{
+    text-align: center;
+}
+.Header{
+   font-family: Poppins; 
+   font-size: 4rem;
+}
+.text{
+    font-size: 20px;
+    margin-top: 1rem;
+    font-family: calibri;
+}
+#image{
+    margin-top: 3rem;
+}

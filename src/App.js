@@ -7,6 +7,8 @@ import './App.css';
 // import ForgotPassword from './FirstPage/ForgotPassword';
 import Vhi_registration from './Components/vhi_registration/Vhi_registration';
 import VhiNavBar from './Components/vhi_navbar/VhiNavBar';
+// import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
         <div>
           <Switch>
             <Route exact path='/'>
-              <Vhi_registration />
+              {/* <Vhi_registration /> */}
+              {/* <About/> */}
+              <Contact/>
             </Route>
           </Switch>
         </div>
