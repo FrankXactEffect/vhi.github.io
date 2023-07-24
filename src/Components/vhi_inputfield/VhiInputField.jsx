@@ -10,7 +10,7 @@ function VhiInputField() {
                 <input type="text" className="first__row" />
             </div>
             <div className='level-one' id='level-one'>
-                <label for="First Name">Vehicle Identification Number</label>
+                <label for="First Name">License Identification Number</label>
                 <input type="text" className="first__row" />
             </div>
 
