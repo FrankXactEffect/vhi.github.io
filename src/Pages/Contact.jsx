@@ -1,8 +1,8 @@
 import React from 'react'
 import contact from '../images/contact.png'
 import '../Pages/Contact.css'
-import Vhi_Button from '../Components/vhi_button/Vhi_Button'
-import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
+// import Vhi_Button from '../Components/vhi_button/Vhi_Button'
+// import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
 
 const Contact = () => {
   return (

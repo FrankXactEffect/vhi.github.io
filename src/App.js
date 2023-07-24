@@ -5,10 +5,11 @@ import './App.css';
 // import HomePage from './FirstPage/HomePage';
 // import Registration from './FirstPage/Registration';
 // import ForgotPassword from './FirstPage/ForgotPassword';
-import Vhi_registration from './Components/vhi_registration/Vhi_registration';
+// import Vhi_registration from './Components/vhi_registration/Vhi_registration';
 import VhiNavBar from './Components/vhi_navbar/VhiNavBar';
 // import About from './Pages/About';
-import Contact from './Pages/Contact';
+// import Contact from './Pages/Contact';
+import Faq from './Pages/Faq';
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
             <Route exact path='/'>
               {/* <Vhi_registration /> */}
               {/* <About/> */}
-              <Contact/>
+              {/* <Contact/> */}
+              <Faq/>
             </Route>
           </Switch>
         </div>
