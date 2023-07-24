@@ -1,0 +1,33 @@
+.rowOne-newregistration {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.rowTwo-newregistration {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+select {
+    width: 30%;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    padding-right: 15px;
+    box-shadow: 0px 1px 4px 1px rgb(110, 110, 110);
+    border: none;
+    outline: none;
+    z-index: 11;
+
+}
+
+select:hover {
+    box-shadow: 0px 2px 4px 2px rgb(109, 108, 108);
+}
+
+.level-one input:hover {
+    box-shadow: 0px 2px 4px 2px rgb(109, 108, 108);
+}

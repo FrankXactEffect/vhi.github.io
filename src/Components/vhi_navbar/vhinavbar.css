@@ -13,8 +13,11 @@
 }
 
 .vpr_logo_file {
+    width: 185px;
+    height: 85px;
     width: 180px;
-   
+
+
 }
 
 .nav-items {
@@ -55,7 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(1.8s);
 
 }
 
