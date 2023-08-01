@@ -14,7 +14,7 @@ function VhiNavBar() {
     return (
         <>
             <nav className='vhi__navbarContainer'>
-                <Link to={""} className='navbar-logo'>
+                <Link to={''} className='navbar-logo'>
                     <img className='vpr_logo_file' src={IMAGES.imgOne} alt="" />
                 </Link>
 

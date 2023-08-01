@@ -12,9 +12,22 @@ function ControlNavBar({ children }) {
         console.log('this is location', location)
         if (location.pathname === '/') {
             setShowNavBar(false)
-        } else if (location.pathname === '/VhiLogin') {
+        } else if (location.pathname === '/Login') {
             setShowNavBar(false)
-        } else {
+        } else if (location.pathname === '/Registration') {
+            setShowNavBar(false)
+        } else if (location.pathname === '/About') {
+            setShowNavBar(false)
+        } else if (location.pathname === '/Faq') {
+            setShowNavBar(false)
+        }
+        else if (location.pathname === '/Contact') {
+            setShowNavBar(false)
+        }
+        else if (location.pathname === '/ForgotPassword') {
+            setShowNavBar(false)
+        }
+         else {
             setShowNavBar(true)
         }
     }, [location])

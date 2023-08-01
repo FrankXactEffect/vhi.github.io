@@ -1,14 +1,13 @@
 import React from 'react'
 import build from '../images/build.png'
-import './HomePage.css'
-import HomeNav from './HomeNav'
+import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 
 
-const HomePage = () => {
+export const UserPage = () => {
   return (
     <div>
-      <HomeNav/>
-   
+
+      <VhiNavBar/>
                 <div className='Body-image'> 
 
                     <h1 className='Header'>Register and renew your <br />
@@ -22,10 +21,7 @@ const HomePage = () => {
                     
                 </div> 
 
+    
     </div>
-
-
   )
 }
-
-export default HomePage

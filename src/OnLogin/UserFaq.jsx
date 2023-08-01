@@ -5,14 +5,14 @@ import cars from '../images/cars.png'
 import file from '../images/file.png'
 import faq from '../images/faq.png'
 import '../Pages/Faq.css'
-import HomeNav from '../FirstPage/HomeNav'
+import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 
 
-const Faq = () => {
+const UserFaq = () => {
   return (
     <div className='full_page'>
         <div>
-        <HomeNav/>
+        <VhiNavBar/>
         </div>
 
         <div className='left'>
@@ -83,4 +83,4 @@ const Faq = () => {
   
 }
 
-export default Faq
+export default UserFaq

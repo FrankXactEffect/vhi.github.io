@@ -1,18 +1,18 @@
 import React from 'react'
 import contact from '../images/contact.png'
 import '../Pages/Contact.css'
-import HomeNav from '../FirstPage/HomeNav'
 import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
+import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 // import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
 // import Vhi_Button from '../Components/vhi_button/Vhi_Button'
 // import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
 
-const Contact = () => {
+const UserContact = () => {
   return (
     <div>
 
       <div>
-        <HomeNav/>
+        <VhiNavBar/>
       </div>
 
     <div className='Full_page'>
@@ -56,4 +56,4 @@ const Contact = () => {
   
 }
 
-export default Contact
+export default UserContact

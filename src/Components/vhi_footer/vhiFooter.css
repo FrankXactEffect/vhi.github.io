@@ -1,8 +1,8 @@
 .vhi_footer_container {
     display: flex;
-    margin-top: 3%;
+    margin-top: 5.5%;
     background-color: rgb(243, 239, 239);
-    height: 20vh;
+    height: 15vh;
     justify-content: space-between;
     align-items: center;
     padding: 3%;
@@ -10,8 +10,7 @@
 }
 
 .vhi_footer_container img {
-    width: 150px;
-    height: 52px;
+    width: 200px;
     padding-left: 5%;
 }
 

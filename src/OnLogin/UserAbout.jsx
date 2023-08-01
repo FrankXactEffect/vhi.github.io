@@ -2,15 +2,15 @@ import React from 'react'
 import about from '../images/about.png'
 import '../Pages/About.css'
 import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
-import HomeNav from '../FirstPage/HomeNav'
+import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 
 
 
-const About = () => {
+const UserAbout = () => {
   return (
     <div >
        <div>
-       <HomeNav/>
+       <VhiNavBar/>
        </div>
      <div className='main_page'>
 
@@ -31,4 +31,4 @@ providing you with efficient and streamlined vehicle registration services. With
   )
 }
 
-export default About
+export default UserAbout

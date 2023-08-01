@@ -32,9 +32,9 @@ const ForgotPassword = () => {
 
             <img className='png' src={FgtIMG} alt="" />
                 
-                <h1 className='header'>Forgot Password</h1>
+                <h1 className='header3'>Forgot Password</h1>
                 
-                <p className='text'>No worries, we’ll send you reset instructions</p>
+                <p className='text3'>No worries, we’ll send you reset instructions</p>
                 
                 <input type="email" name="" id="email"  placeholder='Enter your email'/>
 
