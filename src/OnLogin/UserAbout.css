@@ -3,15 +3,15 @@
 }
 .Header{
    font-family: Poppins; 
-   font-size: 3rem;
+   font-size: 4rem;
 
 }
 .Text{
-    font-size: 16px;
+    font-size: 19px;
     margin-top: 1rem;
     font-family: calibri;
 }
-#image{
+#image_p{
     margin-top: 2.5rem;
-    width: 30%;
+    width: 24%;
 }

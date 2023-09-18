@@ -1,0 +1,32 @@
+.build_1{
+    width: 37%;
+}
+.home_page{
+    display: flex;
+    width: 33%;
+    text-align: center;
+    margin-left: 32rem;
+    margin-right: 32rem;
+}
+.para {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.para1{
+    text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 100;
+margin-top: -2rem;
+color: #4E4C4C;
+    
+}
+
+.fade-in {
+  opacity: 10;
+}
+
+.fade-out {
+  opacity: 0;
+}

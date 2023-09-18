@@ -21,6 +21,9 @@
 #links:hover{
     color: #00C707;
 }
+.Links :active{
+    color: #00C707;
+}
 .Side-Btn{
 display: flex;
 margin-right: 2rem;

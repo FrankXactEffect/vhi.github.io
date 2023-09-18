@@ -1,15 +1,16 @@
 import React from 'react'
 import sidebuild from '../images/sidebuild.png'
-import FgtIMG from '../images/FgtIMG.png'
 import LeftArrow from '../images/LeftArrow.png'
 import Logo from '../images/Logo.png'
-import '../FirstPage/ForgotPassword.css'
+import '../FirstPage/ResetSucess.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { useState } from 'react'
 import axios from 'axios'
+import Lottie from 'lottie-react'
+import animationData from '../images/animation_lkw988pr.json'
 
-function ForgotPassword () {
+function ResetSucess () {
   const navigate=useNavigate()
 
   const[email,userEmail] = useState("")
@@ -35,7 +36,7 @@ function ForgotPassword () {
         localStorage.setItem("token", response.data.accessToken)
         //resolve all promises
         console.log(response)
-        toast.success('Kindly Check your Email');
+        toast.success('reset Successful');
         setTimeout(submit(), 4000)
 
     } catch (e) {
@@ -48,6 +49,7 @@ function ForgotPassword () {
   
   return (
     <div className='flex'>
+      
       <div className='side'>
         <div>
           <Link to="/">
@@ -67,31 +69,19 @@ function ForgotPassword () {
         </div>
       </div>
 
-      <div className='rightside'>
+      <div className='Right-side'>
 
-        <img className='png' src={FgtIMG} alt="" />
+      <div className='size_2'>
+        <Lottie loop={false} animationData={animationData}/>
+        <h1 className='head'>Email Confirmed</h1> 
+        <Link to="/Login" className='link2'><img src={LeftArrow} alt="" /> <p id='text3'>Back to Log in</p></Link>
+       </div>
 
-        <h1 className='header3'>Forgot Password</h1>
-
-        <p className='text3'>No worries, we’ll send you reset instructions</p>
-
-<      form className='form1' action="">
-
-        <input type="email" name="" 
-        required value={email} onChange={e=>userEmail(e.target.value)}
-        id="email" placeholder='Enter your email' />
-
-        <button type='submit' onClick={ForgotPword} 
-        className='reset'>Reset Password</button>
         
-        </form>  
-
-
-        <Link to="/Login" className='link'><img src={LeftArrow} alt="" /> <p id='text2'>Back to Log in</p></Link>
 
       </div>
     </div>
   )
 }
 
-export default ForgotPassword
+export default ResetSucess

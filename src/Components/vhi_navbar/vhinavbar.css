@@ -19,13 +19,14 @@
     display: flex;
     list-style: none;
     text-align: center;
-    width: 130vh;
+    width: 140vh;
     height: 15vh;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
 
 }
+
 
 .drop-icon {
     font-size: 17px !important;
@@ -45,7 +46,31 @@
     color: #4E4C4C;
     font-weight: 500;
     margin-right: 2px;
-    width: 150px;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item1 a {
+    text-decoration: none;
+    color: #4E4C4C;
+    font-weight: 500;
+    margin-right: 2px;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item3 a {
+    text-decoration: none;
+    color: #4E4C4C;
+    font-weight: 500;
+    margin-right: 2px;
+    width: 70px;
     height: 50px;
     /* background-color: aqua; */
     display: flex;
@@ -54,8 +79,29 @@
 
 }
 
+
+
 .nav-item a:hover {
     color: rgb(3, 184, 3) !important;
     transition: transform 200ms ease-in-out;
 
+}
+.nav-item1 a:hover:visited {
+    color: rgb(3, 184, 3) !important;
+    transition: transform 200ms ease-in-out;
+
+}
+.nav-item3 a:hover {
+    color: rgb(3, 184, 3) !important;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+
+}
+li .navitem3:active{
+    color: rgb(3, 184, 3);
+    cursor: pointer;
+
+}
+.active-link {
+    color: rgb(2, 255, 78); /* Change this color to the desired active link color */
 }

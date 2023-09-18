@@ -1,6 +1,6 @@
 import React from 'react'
 import about from '../images/about.png'
-import '../Pages/About.css'
+import '../OnLogin/UserAbout.css'
 import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
 import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 
@@ -21,7 +21,7 @@ vehicle registration and the value of your time. We are a dedicated team of prof
 providing you with efficient and streamlined vehicle registration services. With years of experience in the industry, <br />
  we have gained comprehensive knowledge of the registration process, making us your go-to source for all your registration needs.</p>
     
-                <img id='image' src={about} alt="" />
+                <img id='image_p' src={about} alt="" />
        </div>
           
               <div>

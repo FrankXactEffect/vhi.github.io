@@ -1,6 +1,6 @@
 import React from 'react'
 import contact from '../images/contact.png'
-import '../Pages/Contact.css'
+import '../OnLogin/UserContact.css'
 import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
 import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 // import Vhi_footer from '../Components/vhi_footer/Vhi_footer'
@@ -42,7 +42,9 @@ const UserContact = () => {
                  </div>         
       </div>
       
+      <div className='contact_footer'>
       <Vhi_footer/>
+      </div>
                  
     </div>
     

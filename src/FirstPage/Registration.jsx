@@ -84,7 +84,7 @@ const Registration = () => {
             </div>
 
                   <div>
-                    <img className='img' src={sidebuild} alt="" />
+                    <img className='img2' src={sidebuild} alt="" />
                   </div>
 
       </div>

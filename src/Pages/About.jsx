@@ -24,7 +24,7 @@ providing you with efficient and streamlined vehicle registration services. With
                 <img id='image' src={about} alt="" />
        </div>
           
-              <div>
+              <div className='about_footer'>
               <Vhi_footer/>
               </div>
     </div>

@@ -4,7 +4,6 @@
 }
 
 .side{
-
     margin-left: 3rem;
     box-shadow: 8px 1px #a6a6a669;
     width: 44rem;
@@ -27,7 +26,7 @@ line-height: 1.5rem;
 margin-top: 1rem;
 }
 
-.img{
+.img2{
     width: 85%;
 }
 .Right-side{
@@ -97,14 +96,17 @@ margin-top: 1rem;
     font-family: poppins;
     margin-top: 1rem;
     font-size: 20px;
+    cursor: pointer;
 }
 .Btn:hover{
     background-color: #03d80a;
+    cursor: pointer;
 }
 #Create-acct{
     text-align: center;
     text-decoration: none;
     color: black;
+    margin-top: 0.5rem;
 
 }
 #Signup{

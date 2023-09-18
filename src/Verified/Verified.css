@@ -1,0 +1,27 @@
+.banner_title3{
+    text-align: center;
+    font-size: 45px;
+
+}
+.size{
+    margin-top: -2rem;
+    width: 25%;
+    display: flex;
+    margin-left: 37rem;
+    margin-right: 37rem;
+    justify-content: center;
+    margin-top: -1rem;
+
+}
+.Bottom_text{
+    text-align: center;
+}
+.color{
+    color: #00C707;
+}
+.verified_footer{
+    margin-top: 8rem;
+}
+.expires{
+    color: rgba(255, 0, 0, 0.624);
+}

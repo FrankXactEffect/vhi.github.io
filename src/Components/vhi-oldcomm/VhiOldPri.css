@@ -2,6 +2,7 @@
     text-align: center;
     padding-left: 18rem;
     padding-right: 18rem;
+    margin-top: 3.4rem;
 }
 .car_input{
     display: flex;
@@ -9,7 +10,10 @@
     justify-content: space-between;
     
 }
-.banner__title{
+.banner_title2{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
     margin-top: -1rem;
 }
 #form{
@@ -42,11 +46,87 @@ font-family: poppins;
 display: flex;
 justify-content: space-between;
 
+
 }
 .upload1{
     display: flex;
     align-items: center;
 }
+#image_upload{
+    border: 2px dashed rgba(0, 0, 0, 0.362);
+    height: 150px;
+    width: 200px;
+    margin-top: 2rem;
+}
+#img_file8::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file8::before {
+    content: 'Car License';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  } 
+  #img_file9::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file9::before {
+    content: 'Road Worhtiness';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  } 
+  #img_file10::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file10::before {
+    content: 'Car License';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  } 
+  #add_file{
+    margin-top: 1.5rem;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+  }
 .renew-btn{
     width: 400px;
     height: 60px;
@@ -62,4 +142,7 @@ justify-content: space-between;
 #img{
     margin-bottom: -7.5rem;
     width: 10%;
+}
+.pri_footer{
+    margin-top: 7.2rem;
 }

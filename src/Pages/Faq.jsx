@@ -71,8 +71,9 @@ const Faq = () => {
              <img src={faq} alt="" />
             </div>  
 
-            
+            <div className='faq_footer'>
             <Vhi_footer/>
+            </div>
             
 
            

@@ -41,8 +41,9 @@ const Contact = () => {
                  <img className='contact_img' src={contact} alt="" />
                  </div>         
       </div>
-      
+      <div className='contact_footer2'>
       <Vhi_footer/>
+      </div>
                  
     </div>
     

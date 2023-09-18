@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 function Dropdown() {
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdown, setDropdown] = useState(true);
 
 
     return (

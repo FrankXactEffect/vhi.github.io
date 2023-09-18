@@ -2,37 +2,77 @@ import React from 'react'
 import "./vhiNewReg.css"
 import Vhi_footer from '../vhi_footer/Vhi_footer'
 import VhiNavBar from '../vhi_navbar/VhiNavBar';
-import { useState } from 'react';
+import { useState} from 'react';
 import { toast } from 'react-toastify'
-import axios from 'axios';
-
-
-
+// import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import upload from '../vhi-oldcomm/upload.png'
+import dropdon from '../vhi_newregistration/dropdon.png'
 
 
 function Vhi_NewReg() {
 
+    const navigate=useNavigate()
+   
+    // const [accessToken, setAccessToken] = useState('');
     const [first_name, setFirstName] = useState('');
     const [last_name, setLast_Name] = useState('');
     const [address, setAddress] = useState('');
     const [date_of_birth, setDateBirth] = useState('');
     const [gender, setGender] = useState('');
     const [identity_number, setIdentity] = useState('');
-    const handleGenderChange = (event) => {
-        setGender(event.target.value); // Update the gender state with the selected value
-    };
+   
+    const handleGenderChange = (event) => {setGender(event.target.value)}; 
+    
     const [image, setImageURL] = useState('');
     const handleImageChange = (e) => {
         const file = e.target.files[0];
         setImageURL(file);
       };
-    
 
-    async function handleSubmit(e) {
-        e.preventDefault();
+     const token = window.localStorage.getItem('token');
+     console.log(token);
+
+      const IsValid = () => {
+        let isProceed = true;
+    
+        if (first_name === null || first_name === '') {
+          isProceed = false;
+          toast.error('Enter Your First Name')
+        }
+        if (last_name === null || last_name === '') {
+          isProceed = false;
+          toast.error('Enter your last name')
+        }
+        if (date_of_birth === null || date_of_birth === '') {
+          isProceed = false;
+          toast.error('Enter your Date of Birth')
+        }
+        if (gender === null || gender === '') {
+            isProceed = false;
+            toast.error('Enter your gender')
+          }
+        if (identity_number === null || identity_number === '') {
+            isProceed = false;
+            toast.error('Enter identity number')
+          }
+    
+    
+        return isProceed
+      }  
+   
+      async function handleSubmit(e) {
+        e.preventDefault();  
+        
+
+        let submit = { first_name, last_name, address, gender, image };
+        console.log(submit);
+
+        if (IsValid()) {
+   
+        try{
 
         const formData = new FormData();
-
         formData.append('first_name', first_name);
         formData.append('last_name', last_name);
         formData.append('address', address);
@@ -41,45 +81,33 @@ function Vhi_NewReg() {
         formData.append('identity_number', identity_number);
         formData.append('image', image);
 
-        const token = localStorage.getItem('token');
-        const headers = {
-            Authorization: `Bearer ${token}`,
-        };
+        // const response = await axios.post("https://license-registration.onrender.com/user/profile", formData, {
+        //     headers: {
+        //         'Authorization': `Bearer ${token}`,
+        //         'accept': '*/*',
+        //     }
+        // });
 
-        let submit = { first_name, last_name, address, gender, image };
-        console.log(submit);
-
-        const ENDPOINT_URI = `${process.env.REACT_APP_URI}/user/profile`
-
-        console.log(ENDPOINT_URI)
-
-        // try {
-
-            axios.post (ENDPOINT_URI,formData, {
-                'Content-Type': 'multipart/form-data',
-                method: 'POST',
-                headers: headers,
-            })
-
-            .then(response => {
-                console.log(response.data);
-              })
-              .catch(error => {
-                console.error('Error:', error);
-              });
-
-            // localStorage.setItem("token", response.data.accessToken)
-            // //resolve all promises
-            // console.log()
-        //     toast.success('Sucessful');
+        navigate("/Vhi_registration");
+            // if (response.status === 200) {
+            //     // Handle success
+            //     console.log(response.data);
+            //     toast.success('Upload Successful');
+            //     navigate("/Vhi_registration"); // Navigate to success page or desired route
+            // } else {
+            //     // Handle other status codes or errors
+            //     console.log('Upload failed');
+            //     toast.error('Upload Failed');
+            // }
+        }
+        catch(e) {
+            console.log(e)
+            toast.error('failed')
+        }
 
 
-        // } catch (e) {
-        //     console.log(e)
-        //     toast.error('failed')
-
-        // }
-
+     }   
+            
 
     }
 
@@ -89,62 +117,77 @@ function Vhi_NewReg() {
             
             <VhiNavBar />
 
-            <div className='banner__title'>
-                <h1>New Registration</h1>
-                <p>Owner Identification</p>
+            <div className='banner_title'>
+                <h1>User Registration</h1>
             </div>
 
-            <form onSubmit={handleSubmit} action='upload' method='post' encType='multipart/form-data' >
+            <form onSubmit={handleSubmit} >
+
+              <div className='top_three'>
                 
                 <div>
-                    <label htmlFor="">First Name</label>
-                    <input value={first_name} onChange={e => setFirstName(e.target.value)} type="text" name="" id="" />
+                    <label htmlFor="">First Name</label><br />
+                    <input value={first_name} onChange={e => setFirstName(e.target.value)} type="text" name="first_name" id="input_box" />
                 </div>
 
                 <div>
-                    <label htmlFor="">Last Name</label>
-                    <input value={last_name} onChange={e => setLast_Name(e.target.value)} type="text" name="" id="" />
+                    <label htmlFor="">Last Name</label><br />
+                    <input value={last_name} onChange={e => setLast_Name(e.target.value)} type="text" name="last_name" id="input_box" />
                 </div>
 
                 <div>
-                    <label htmlFor="">address</label>
-                    <input value={address} onChange={e => setAddress(e.target.value)} type="text" name="" id="" />
+                    <label htmlFor="">Address</label><br />
+                    <input value={address} onChange={e => setAddress(e.target.value)} type="text" name="address" id="input_box" />
+                </div>
+
+                </div>  
+
+                
+            <div className='bottom_three'>
+                <div>
+                    <label htmlFor="">Date of Birth</label><br />
+                    <input type="date" value={date_of_birth} onChange={e => setDateBirth(e.target.value)} name="date_of birth" id="input_box" />
+                    {/* <input  onChange={e => setDateBirth(e.target.value)} type="text" name="date_of_birth" /> */}
                 </div>
 
                 <div>
-
-                    <select value={gender} onChange={handleGenderChange}>
-                        <option value="M">M</option>
-                        <option value="F">F</option>
-                    </select>
-
+                    <label id='Id_number' htmlFor="">Identity Number</label><br />
+                    <input value={identity_number} onChange={e => setIdentity(e.target.value)} type="text" name="identity_number" id="input_box2" />
                 </div>
 
-                <div>
-                    <label htmlFor="">Date of Birth</label>
-                    <input value={date_of_birth} onChange={e => setDateBirth(e.target.value)} type="text" name="" id="" />
-                </div>
-
-                <div>
-                    <label htmlFor="">Identity Number</label>
-                    <input value={identity_number} onChange={e => setIdentity(e.target.value)} type="text" name="" id="" />
-                </div>
-
-                <div>
-                    <label htmlFor="" >Identity Card</label>
-                    <input accept='image/*' onChange={handleImageChange}  type="file" name="" id="" />
+                
                     
-                    </div>
+                <div className='mandf'>
+                
+                        <select id='gend' name='gender' value={gender} onChange={handleGenderChange}>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            
+                        </select>
+                        <img className='icon' src={dropdon} alt="" />
 
-                <div>
-                    <button  type='submit'>Submit</button>
+                </div>
+
+                </div>  
+
+                <div className='img_bottom' id='image_upload'> 
+                    <img id='add_file' src={upload} alt="" />
+                    <input accept='image/*' onChange={handleImageChange}  type="file" name="image" id="img_file7" />
+                    
+                </div>
+                      
+
+                <div className='button'>
+                    <button className='Btn_1'  type='submit'>Submit</button>
                 </div>
 
 
 
 
             </form>
+            <div className='footer'>
             <Vhi_footer />
+            </div>
         </div>
     )
 }

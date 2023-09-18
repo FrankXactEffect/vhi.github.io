@@ -25,13 +25,13 @@ function Login() {
           //convert three state to object
           let item = { email, password }
           console.warn(item)
-          //https://to-do-service-backend-tutorial.onrender.com/users/create
+          
           const response = await axios.post(ENDPOINT_URI, {
               email: email,
               password: password,
           })
 
-          localStorage.setItem("token", response.data.accessToken)
+          window.localStorage.setItem("token", response.data.accessToken)
           //resolve all promises
           console.log(response)
           toast.success('Login Sucessful');
@@ -65,7 +65,7 @@ function Login() {
         </div>
 
         <div>
-          <img className='img' src={sidebuild} alt="" />
+          <img className='img2' src={sidebuild} alt="" />
 
         </div>
       </div>

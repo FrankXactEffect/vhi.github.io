@@ -43,8 +43,13 @@
     color: white;
     font-size: 20px;
     font-family: poppins;
+    cursor: pointer;
 }
 .Submit:hover{
     background-color: #02a107;
+    cursor: pointer;
   
+}
+.contact_footer2{
+    margin-top: -0.3rem;
 }

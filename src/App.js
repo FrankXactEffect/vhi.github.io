@@ -20,6 +20,10 @@ import UserFaq from './OnLogin/UserFaq';
 import UserContact from './OnLogin/UserContact';
 import UserAbout from './OnLogin/UserAbout';
 import VhiOldPri from './Components/vhi-oldcomm/VhiOldPri';
+import Verified from './Verified/Verified';
+import ResetSucess from './FirstPage/ResetSucess';
+import ResgistrationVer from './Verified/ResgistrationVer';
+
 
 
 
@@ -44,6 +48,11 @@ function App() {
            <Route path ='/UserAbout' element={<UserAbout/>}></Route>
            <Route path ='/VhiOldCom' element={<VhiOldCom/>}></Route>
            <Route path ='/VhiOldPri' element={<VhiOldPri/>}></Route>
+           <Route path ='/Vhi_registration' element={<VhiOldPri/>}></Route>
+           <Route path ='/Verified' element={<Verified/>}></Route>
+           <Route path ='/ResetSucess' element={<ResetSucess/>}></Route>
+           <Route path ='/RegistrationVer' element={<ResgistrationVer/>}></Route>
+
 
            
         </Routes>

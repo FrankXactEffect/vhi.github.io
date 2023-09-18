@@ -4,7 +4,7 @@ import dandt from '../images/dandt.png'
 import cars from '../images/cars.png'
 import file from '../images/file.png'
 import faq from '../images/faq.png'
-import '../Pages/Faq.css'
+import '../OnLogin/UserFaq.css'
 import VhiNavBar from '../Components/vhi_navbar/VhiNavBar'
 
 

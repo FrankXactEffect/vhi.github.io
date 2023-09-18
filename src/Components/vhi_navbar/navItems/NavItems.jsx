@@ -3,7 +3,7 @@ export const navItems = [
         id: 1,
         title: "Home",
         path: "/UserPage",
-        cName: "nav-item"
+        cName: "nav-item3"
     },
     {
         id: 2,
@@ -14,20 +14,25 @@ export const navItems = [
     {
         id: 3,
         title: "Renewal of plate",
-        path: "./RenewalofPlate",
         cName: "nav-item"
     },
     {
         id: 4,
         title: "About",
         path: "/UserAbout",
-        cName: "nav-item"
+        cName: "nav-item1"
     },
     {
         id: 5,
         title: "Contact",
         path: "/UserContact",
-        cName: "nav-item"
+        cName: "nav-item1"
+    },
+    {
+        id: 6,
+        title: "FAQ",
+        path: "/UserFaq",
+        cName: "nav-item1"
     },
 
 ];

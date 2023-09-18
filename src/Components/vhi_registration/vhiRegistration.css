@@ -1,38 +1,171 @@
-.banner__title {
-    display: grid;
-    place-items: center;
-    margin-top: 30px;
-
+.vin{
+    text-align: center;
+    margin-top:0.5rem;
 }
-
-.banner__title h1 {
-    color: #3F3D56;
-    font-size: 60px;
-    margin-top: 10px;
+#input_box_vin{
+width: 415px;
+height: 40px;
+flex-shrink: 0;
+border: 1px solid rgba(0, 0, 0, 0.468);
+stroke: #000;
+border-radius: 20px;
+margin-top: 4px;
 }
-
-.banner__title p {
-    font-size: 30px;
-    line-height: 55px;
-    color: #5b596b;
-    font-weight: 500;
-
-}
-
-.vhi_registration-container {
-    position: relative;
-}
-
-.ques-con {
+.Top{
+    margin-top: -1rem;
     display: flex;
-    justify-content: right;
-    position: fixed;
-    bottom: 25%;
-    left: 94%;
-
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
+.Bottom{
+    margin-top: -1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#image_upload{
+    border: 2px dashed rgba(0, 0, 0, 0.362);
+    height: 150px;
+    width: 200px;
+}
+#img_file::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file::before {
+    content: 'Owner Passport';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  }
 
-.question-icon {
-    font-size: 55px !important;
-    color: rgb(3, 184, 3);
+#img_file2::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file2::before {
+    content: 'Attestation Letter';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  } 
+  #img_file3::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file3::before {
+    content: 'Purchase Reciept';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  }
+  #img_file4::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file4::before {
+    content: 'Delivert Note';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  }
+  #img_file5::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file5::before {
+    content: 'Proof Of Ownership';
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  }
+  #img_file6::-webkit-file-upload-button {
+    visibility: hidden;
+   text-align: center;
+   margin-right: -1.7rem;
+   margin-top: -1rem;
+   color: rgba(11, 255, 15, 0.867);
+  }
+  #img_file6::before {
+    content: "Driver's License";
+    cursor: pointer;
+    font-size: 15pt;
+    padding-left: 15px;
+    font-family: calibri;
+    border: none;
+    -user-select: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 4rem;
+  }
+  #add_file{
+    margin-top: 1.5rem;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+  }
+.registration_footer{
+  width: 100%;
+  margin-top: -4rem;
 }
